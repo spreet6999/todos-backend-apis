@@ -1,0 +1,24 @@
+{
+  "name": "todos-backend-apis",
+  "version": "1.0.0",
+  "description": "Backend consumable APIs wrote in NodeJS, ExpressJS covering basic CRUD operations",
+  "main": "todoAppServer.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spreet6999/todos-backend-apis.git"
+  },
+  "author": "shagunpreet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spreet6999/todos-backend-apis/issues"
+  },
+  "homepage": "https://github.com/spreet6999/todos-backend-apis#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
