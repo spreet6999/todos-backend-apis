@@ -41,10 +41,10 @@ Running the API
 Start the server: Use Nodemon to start the server in development mode, which automatically restarts the server whenever you make changes to the code:
 
 ```Bash
-npm run dev
+npm start
 ```
 
-API endpoints: The API is accessible at http://localhost:3002 (default port). Here's a summary of the endpoints:
+API endpoints: The API is accessible at http://localhost:3000 (default port). Here's a summary of the endpoints:
 
 | Method | Endpoint       | Description                                                            |
 | ------ | -------------- | ---------------------------------------------------------------------- |
@@ -63,7 +63,7 @@ Currently, the API stores todos in the ./assets/data/todos.json file. For produc
 ### Get all todos:
 
 ```Bash
-curl http://localhost:3002/
+curl http://localhost:3000/
 ```
 
 ### Get a specific todo (ID: 1):
@@ -75,19 +75,19 @@ curl http://localhost:3000/todos?id=1
 ### Create a new todo:
 
 ```Bash
-curl -X POST -H "Content-Type: application/json" -d '{"title": "Buy groceries", "completed": false}' http://localhost:3002/todos
+curl -X POST -H "Content-Type: application/json" -d '{"title": "Buy groceries", "completed": false}' http://localhost:3000/todos
 ```
 
 ### Update a todo (ID: 2):
 
 ```Bash
-curl -X PUT -H "Content-Type: application/json" -d '{"title": "Updated title", "completed": true}' http://localhost:3002/todos?id=2
+curl -X PUT -H "Content-Type: application/json" -d '{"title": "Updated title", "completed": true}' http://localhost:3000/todos?id=2
 ```
 
 ### Delete a todo (ID: 3):
 
 ```Bash
-curl -X DELETE http://localhost:3002/todos?id=3
+curl -X DELETE http://localhost:3000/todos?id=3
 ```
 
 ### Testing
