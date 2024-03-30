@@ -3,7 +3,7 @@ const app = express();
 const todosJSON = require("./assets/data/todos.json");
 const bodyParser = require("body-parser");
 const fs = require("fs/promises");
-const port = 3002;
+const port = 3000;
 
 app.use(bodyParser.json());
 
